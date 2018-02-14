@@ -14,11 +14,6 @@ RUN apt-get update && apt-get install -y \
 # SASS/Compass
 RUN gem install sass -v 3.4.18
 RUN gem install compass
-
-WORKDIR /var/www/
-ADD package.json .
 RUN npm install
 
-EXPOSE 3000
-EXPOSE 35729
-
+WORKDIR /var/www/
