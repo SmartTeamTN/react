@@ -18,5 +18,5 @@ RUN npm install
 
 WORKDIR /var/www/
 
-COPY entrypoint.sh /usr/bin/entrypoint.sh
+ADD entrypoint.sh /usr/bin/entrypoint.sh
 CMD sh /usr/bin/entrypoint.sh
