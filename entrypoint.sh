@@ -4,4 +4,7 @@ if [ ! -d node_modules ]; then
     npm install --unsafe-perm
 fi
 
-grunt dev
+npm build
+npm start
+
+tail -f /dev/null
