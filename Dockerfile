@@ -16,7 +16,5 @@ RUN gem install sass -v 3.4.18
 RUN gem install compass
 RUN npm install
 
-WORKDIR /var/www/
-
 ADD entrypoint.sh /usr/bin/entrypoint.sh
 CMD sh /usr/bin/entrypoint.sh

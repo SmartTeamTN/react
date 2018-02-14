@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ ! -d node_modules ]; then
-    npm install .
+    npm install
 fi
 
 nohup npm start
