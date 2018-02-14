@@ -1,10 +1,9 @@
 #!/bin/sh
 
 if [ ! -d node_modules ]; then
-    npm install --unsafe-perm
+    npm install .
 fi
 
-npm build
-npm start
+nohup npm start
 
 tail -f /dev/null
