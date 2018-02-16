@@ -5,5 +5,3 @@ if [ ! -d node_modules ]; then
 fi
 
 nohup npm start
-
-tail -f /dev/null
