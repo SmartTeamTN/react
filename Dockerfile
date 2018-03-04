@@ -1,8 +1,5 @@
 FROM node:8.9.4-stretch
 
-# Debug Level
-ENV NPM_CONFIG_LOGLEVEL warn
-
 RUN apt-get update && apt-get install -y \
 	locales \
 	git \
